@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("Bypass authentication by encoding the credentials base64 format", async ({
+test("@smoke Bypass authentication by encoding the credentials base64 format", async ({
   page,
 }) => {
   let encodedCredential = Buffer.from(
