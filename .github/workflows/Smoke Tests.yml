@@ -37,8 +37,8 @@ jobs:
        
 
     # runs the tests in headless mode (without a GUI)
-    - name: Run Playwright tests
-      run: npm run tests-smoke
+    - name: Run Smoke tests
+      run: npm run test-smoke
 
     # Upload test results and reports
     - name: Upload Playwright test results
