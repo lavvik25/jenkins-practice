@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 5 # smoke tests are simple tests to make sure the system is up and running 
     runs-on: ubuntu-latest # Virtual amchine (macos-latest, windows-latest, ubuntu-latest)
 
     # setup the node js
@@ -38,7 +38,7 @@ jobs:
 
     # runs the tests in headless mode (without a GUI)
     - name: Run Smoke tests
-      run: npm run test-smoke
+      run: npm run test-smoke #it runs only the ones with smoke tag 
 
     # Upload test results and reports
     - name: Upload Playwright test results
